@@ -68,7 +68,10 @@
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <a href="#" class="dropdown-item">Profile</a>
                     <a href="#" class="dropdown-item">Settings</a>
-                    <a href="#" class="dropdown-item">Logout</a>
+                    <form method="POST" action="{{ route('admin.logout') }}">
+                        @csrf
+                        <button type="submit" class="dropdown-item">Logout</button>
+                    </form>
                 </div>
             </div>
         </div>
