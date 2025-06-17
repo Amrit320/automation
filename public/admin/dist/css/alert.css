@@ -1,0 +1,47 @@
+.alertSection {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alertSection .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 6px;
+  background-color: #222222;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.alertSection .alert .alertText {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.alertSection .alert .cancelButton {
+  margin-left: 30px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.alertSection .alert .cancelButton:hover {
+  background-color: #454545;
+}
+.alertSection .alert .cancelButton:active svg {
+  transform: scale(0.85);
+}
+.alertSection .successAlert .icon-tabler-rosette-discount-check {
+  color: #10b981;
+}
+.alertSection .errorAlert .icon-tabler-circle-x {
+  color: #ef4444;
+}/*# sourceMappingURL=alert.css.map */
